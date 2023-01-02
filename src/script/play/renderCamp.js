@@ -46,7 +46,7 @@ function renderMap(mapParams) {
 
           const imgBomb = document.createElement("img");
 
-          imgBomb.src = "/src/img/bomb-removebg-preview.png";
+          imgBomb.src = "../img/bomb-removebg-preview.png";
           imgBomb.classList.add("bombRender");
     
           divTwo.appendChild(imgBomb);

@@ -36,13 +36,13 @@ function flegCreateAndRenderAndRemove() {
           button.classList.add("divFlag");
 
           if (flag === "Easy") {
-            imgFlag.src = "/src/img/red-flag-removebg-preview.png";
+            imgFlag.src = "../../img/red-flag-removebg-preview.png";
             imgFlag.classList.add("flag");
           } else if (flag === "Normal") {
-            imgFlag.src = "/src/img/orange_flag.png";
+            imgFlag.src = "../../img/orange_flag.png";
             imgFlag.classList.add("flag", "flag--normal");
           } else if (flag === "Hard") {
-            imgFlag.src = "/src/img/blue_flag.png";
+            imgFlag.src = "../../img/blue_flag.png";
             imgFlag.classList.add("flag", "flag--hard");
           }
 
