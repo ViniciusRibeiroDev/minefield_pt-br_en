@@ -37,6 +37,8 @@ body {
 .cont__container div {
   display: flex;
 
+  align-items: center;
+
   gap: 10px;
 }
 
