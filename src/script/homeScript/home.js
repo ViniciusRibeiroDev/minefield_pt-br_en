@@ -1,5 +1,8 @@
-const backGroundDifficulty = document.querySelector(".background");
-const title = document.querySelector(".title");
+import { clickEasy } from "./difficulty/easy.js";
+import { clickNormal } from "./difficulty/normal.js";
+import { clickHard } from "./difficulty/hard.js";
+import { localStorageFunction } from "./rederLocalStorageDifficult.js";
+
 const buttonPlay = document.querySelector(".play");
 const buttonDifficulty = document.querySelector(".difficulty");
 const buttonStatistics = document.querySelector(".statistics");
@@ -9,10 +12,8 @@ const buttonNormal = document.querySelector(".home__normal");
 const buttonHard = document.querySelector(".home__hard");
 
 let play = () => {
-  buttonPlay.addEventListener("click", () => {
-  })
-}
-play()
+  buttonPlay.addEventListener("click", () => {});
+};
 
 let difficulty = () => {
   buttonDifficulty.addEventListener("click", () => {
@@ -25,23 +26,22 @@ let difficulty = () => {
     buttonStatistics.style.display = "none";
     buttonHelp.style.display = "none";
 
-    buttonEasy.addEventListener(
-      "click",
-      () => clickEasy(buttonEasy, buttonNormal, buttonHard)
-    );
-    buttonNormal.addEventListener(
-      "click",
-      () => clickNormal(buttonEasy, buttonNormal, buttonHard)
-    );
-    buttonHard.addEventListener(
-      "click",
-      () => clickHard(buttonEasy, buttonNormal, buttonHard)
-    );
+    buttonEasy.addEventListener("click", () => {
+      clickEasy(buttonEasy, buttonNormal, buttonHard);
+    });
+    buttonNormal.addEventListener("click", () => {
+      clickNormal(buttonEasy, buttonNormal, buttonHard);
+    });
+    buttonHard.addEventListener("click", () => {
+      clickHard(buttonEasy, buttonNormal, buttonHard);
+    });
   });
-}
+};
 
+let statistics = () => {};
+
+let help = () => {};
+
+play();
 difficulty();
-
-let statistics = () => {}
-
-let help = () => {}
+localStorageFunction(buttonEasy, buttonNormal, buttonHard);

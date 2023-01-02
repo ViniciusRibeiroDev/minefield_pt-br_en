@@ -1,9 +1,15 @@
-const localStorageDifficulty = localStorage.getItem("Difficulty");
+import { clickEasy } from "./difficulty/easy.js";
+import { clickNormal } from "./difficulty/normal.js";
+import { clickHard } from "./difficulty/hard.js";
 
-if (localStorageDifficulty === "Easy") {
-  clickEasy(buttonEasy, buttonNormal, buttonHard);
-} else if (localStorageDifficulty === "Normal") {
-  clickNormal(buttonEasy, buttonNormal, buttonHard);
-} else if (localStorageDifficulty === "Hard") {
-  clickHard(buttonEasy, buttonNormal, buttonHard);
+export function localStorageFunction(buttonEasy, buttonNormal, buttonHard) {
+  const localStorageDifficulty = localStorage.getItem("Difficulty");
+
+  if (localStorageDifficulty === "Easy") {
+    clickEasy(buttonEasy, buttonNormal, buttonHard);
+  } else if (localStorageDifficulty === "Normal") {
+    clickNormal(buttonEasy, buttonNormal, buttonHard);
+  } else if (localStorageDifficulty === "Hard") {
+    clickHard(buttonEasy, buttonNormal, buttonHard);
+  }
 }

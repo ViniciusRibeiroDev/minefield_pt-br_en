@@ -14,7 +14,7 @@ function renderLocalStorageDifficulty() {
 
     campOne.forEach((one) => one.classList.add("campOne--easy"));
     campTwo.forEach((two) => two.classList.add("campTwo--easy"));
-    iconFlag.src = "/src/img/red-flag-removebg-preview.png";
+    iconFlag.src = "../img/red-flag-removebg-preview.png";
 
     contFlag = 33;
   } else if (difficultChecker === "Normal") {
@@ -23,7 +23,7 @@ function renderLocalStorageDifficulty() {
 
     campOne.forEach((one) => one.classList.add("campOne--normal"));
     campTwo.forEach((two) => two.classList.add("campTwo--normal"));
-    iconFlag.src = "/src/img/orange_flag.png";
+    iconFlag.src = "../img/orange_flag.png";
     iconFlag.classList.add("flag--normal")
 
     contFlag = 40;
@@ -33,7 +33,7 @@ function renderLocalStorageDifficulty() {
 
     campOne.forEach((one) => one.classList.add("campOne--hard"));
     campTwo.forEach((two) => two.classList.add("campTwo--hard"));
-    iconFlag.src = "/src/img/blue_flag.png";
+    iconFlag.src = "../img/blue_flag.png";
     contFlag = 60;
   }
 }

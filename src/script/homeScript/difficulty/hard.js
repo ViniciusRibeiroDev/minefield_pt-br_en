@@ -1,4 +1,11 @@
-function clickHard(easy, normal, hard) {
+const backGroundDifficulty = document.querySelector(".background");
+const title = document.querySelector(".title");
+const buttonPlay = document.querySelector(".play");
+const buttonDifficulty = document.querySelector(".difficulty");
+const buttonStatistics = document.querySelector(".statistics");
+const buttonHelp = document.querySelector(".help");
+
+export function clickHard(easy, normal, hard) {
   easy.style.display = "none";
   normal.style.display = "none";
   hard.style.display = "none";
