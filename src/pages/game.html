@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../style/reset.css"/> <!-- /src/style/reset.css -->
+    <link rel="stylesheet" href="./../style/globalStyle.css"/> <!-- /src/style/globalStyle.css -->
+    <link rel="stylesheet" href="./../style/playStyle/renderGame.css"/> <!-- /src/style//playStyle/renderGame.css -->
+    <link rel="stylesheet" href="./../style/playStyle/renderGaming.css"> <!-- /src/style/playStyle/renderGaming.css -->
+    <link rel="stylesheet" href="./../style/playStyle/renderGameDificulty.css"> <!-- /src/style/playStyle/renderGameDificulty.css -->
+    <link
+    rel="shortcut icon"
+    href="./../img/bomb-removebg-preview.png"
+    type="image/x-icon"
+    />
+    <title>Campo Minado</title>
+  </head>
+  <!-- Assim que o botão clicar for clicado, a primera coisa a fazer é abrir um modal com algumas instruções basicas -->
+  <!-- Quando apertar no X para fechar o jogo, abrir um modal para perguntar: "Tem certeza que deseja sair?" -->
+  <body class="background">
+    <div class="camp">
+      <header class="header__container">
+        <div class="cont__container">
+          <div>
+            <img class="icons" src="/src/img/emoji_feliz.png" alt="J" />
+            <p class="cont moves">0</p>
+          </div>
+          <div>
+            <img
+              class="icons icon__flag"
+              src="./../img/red-flag-removebg-preview.png"
+              alt="B"
+            />
+            <p class="cont flags">0</p>
+          </div>
+          <div>
+            <img class="icons" src="./../img/clock.png" alt="R" />
+            <p class="cont timer">0</p>
+          </div>
+        </div>
+        <span class="cont close">X</span>
+      </header>
+      <main class="main__container"></main>
+    </div>
+    <script src="./../script/play/localStorage/checkerDifficulty.js"></script> <!-- /src/script/play/localStorage/checkerDifficulty.js -->
+    <script src="./../script/play/mapsDev.js"></script> <!-- /src/script/play/mapsDev.js -->
+    <script src="./../script/play/renderCamp.js"></script> <!-- /src/script/play/renderCamp.js -->
+    <script src="./../script/play/gaming/renderMapGaming.js"></script> <!-- /src/script/play/gaming/renderMapGaming.js -->
+    <script src="./../script/play/gaming/flagCreateAndRender.js"></script> <!-- /src/script/play/gaming/flagCreateAndRender.js -->
+    <script src="./../script/play/gaming/renderExpand.js"></script> <!-- /src/script/play/gaming/renderExpand.js -->
+    <script src="./../script/play/gaming/header.js"></script> <!-- /src/script/play/gaming/header.js -->
+  </body>
+</html>

@@ -1,0 +1,51 @@
+.header--easy {
+    background-color: var(--green_3);
+}
+
+.header--normal {
+    background-color: var(--red_3);
+}
+
+.header--hard {
+    background-color: var(--purple_3);
+}
+
+.campOne--easy {
+    background-color: var(--green_1);
+    border: solid 1px var(--green_1); 
+}
+
+.campTwo--easy {
+    background-color: var(--green_2);
+    border: solid 1px var(--green_2); 
+}
+
+.campOne--normal {
+    background-color: var( --red_one);
+    border: solid 1px var(--red_one); 
+}
+
+.campTwo--normal {
+    background-color: var(--red_two);
+    border: solid 1px var(--red_two); 
+}
+
+.campOne--hard {
+    background-color: var(--purple_4);
+    border: solid 1px var(--purple_4); 
+}
+
+.campTwo--hard {
+    background-color: var(--purple_2);
+    border: solid 1px var(--purple_2); 
+}
+
+.campTree {
+    background-color: var(--x_1);
+    border: solid 1px var(--x_1);
+  }
+  
+.campFour {
+    background-color: var(--x_2);
+    border: solid 1px var(--x_2);
+  }

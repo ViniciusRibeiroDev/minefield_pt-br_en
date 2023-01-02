@@ -1,0 +1,81 @@
+.home__easy {
+  display: none;
+
+  background-color: var(--green_1);
+
+  box-shadow: 10px 10px 10px var(--green_shadow);
+}
+
+.home__easy:hover,
+.difficulty.home__easy:hover,
+.help.home__easy:hover {
+  background-color: var(--green_3);
+}
+
+.home__easy:focus,
+.difficulty.home__easy:focus,
+.help.home__easy:focus {
+  color: var(--green_2);
+  background-color: var(--white_2);
+}
+
+.difficulty.home__easy,
+.help.home__easy {
+  background-color: var(--green_2);
+}
+
+.home__normal {
+  display: none;
+
+  background-color: var(--red_1);
+
+  box-shadow: 10px 10px 10px var(--red_shadow);
+}
+
+.home__normal:hover,
+.difficulty.home__normal:hover,
+.help.home__normal:hover {
+  background-color: var(--red_3);
+}
+
+.home__normal:focus,
+.difficulty.home__normal:focus,
+.help.home__normal:focus {
+  color: var(--red_1);
+  background-color: var(--white_2);
+}
+
+.difficulty.home__normal,
+.help.home__normal {
+  background-color: var(--red_2);
+}
+
+.home__hard {
+  display: none;
+
+  background-color: var(--purple_1);
+
+  box-shadow: 10px 10px 10px var(--purple_shadow);
+}
+
+.home__hard:hover,
+.difficulty.home__hard:hover,
+.help.home__hard:hover {
+  background-color: var(--purple_3);
+}
+
+.home__hard:focus,
+.difficulty.home__hard:focus,
+.help.home__hard:focus {
+  color: var(--purple_2);
+  background-color: var(--white_2);
+}
+
+.difficulty.home__hard,
+.help.home__hard {
+  background-color: var(--purple_2);
+}
+
+a {
+  text-decoration: none;
+ }

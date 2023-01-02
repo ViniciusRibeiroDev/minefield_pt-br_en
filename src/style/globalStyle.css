@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap");
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+:root {
+  --white_1: #ffffff;
+  --white_2: rgb(228, 228, 228);
+  --black: #000000;
+
+  --backGround-hard_1: rgba(101, 11, 11, 1);
+  --backGround-hard_2: rgba(0, 0, 0, 1);
+
+  --green_1: #2be228;
+  --green_2: #11b10e;
+  --green_3: #0d8e0b;
+  --green_shadow: rgb(9, 53, 7);
+
+  --red_1: #f80000;
+  --red_2: #9c0808;
+  --red_3: #6e0303;
+  --red_one: rgb(228, 49, 36);
+  --red_two: rgb(143, 30, 30);
+  --red_shadow: rgb(20, 1, 1);
+  --red_text_shadow: #2b0101;
+
+  --backGround-normal_1: rgba(224, 186, 50, 1);
+  --backGround-normal_2: rgba(255, 97, 29, 1);
+
+  --x_1: #FFD584;
+  --x_2: #D3AC5E;
+
+  --blue_1: #56e0ff;
+  --blue_2: #18758a;
+  --blue_3: #1C96B0;
+  --blue_text_shadow: #365c64;
+
+  --purple_1: #57037e;
+  --purple_2: #1a0b57;
+  --purple_3: #21062e;
+  --purple_4: #69009B;
+  --purple_shadow: rgb(15, 1, 15);
+
+  --pink: #f800e3;
+
+  --title_1: 4rem;
+  --title_2: 3.25rem;
+
+  --text: 2rem;
+}
+
+.background,
+.color__easy {
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Raleway', sans-serif;
+
+  background-image: linear-gradient(var(--blue_2), var(--blue_1));
+}
+
+.color__normal {
+  background-image: linear-gradient(
+    var(--backGround-normal_2),
+    var(--backGround-normal_1)
+  );
+}
+
+.color__hard {
+  background-image: linear-gradient(
+    var(--backGround-hard_2),
+    var(--backGround-hard_1)
+  );
+}
+
+.title,
+.title__easy {
+  font-size: var(--title_1);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+
+  color: var(--red_1);
+
+  text-shadow: 10px 10px 4px #125d6e, 2px 2px 0 #000000, -2px -2px 0 #000000,
+    -2px 2px 0 #000000, 2px -2px 0 #000000;
+}
+
+.title__normal {
+  font-size: var(--title_1);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+
+  color: var(--red_1);
+
+  text-shadow: 10px 10px 4px var(--red_text_shadow), 2px 2px 0 #000000,
+    -2px -2px 0 #000000, -2px 2px 0 #000000, 2px -2px 0 #000000;
+}
+
+.title__hard {
+  font-size: var(--title_1);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+
+  color: var(--red_1);
+
+  text-shadow: 10px 10px 4px var(--blue_text_shadow), 2px 2px 0 #000000,
+    -2px -2px 0 #000000, -2px 2px 0 #000000, 2px -2px 0 #000000;
+}

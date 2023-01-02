@@ -1,0 +1,176 @@
+.campOne {
+  cursor: pointer;
+
+  background-color: var(--green_1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 41px;
+  height: 100%;
+
+  border: solid 1px var(--green_1);
+
+  font-weight: bold;
+  font-size: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+.campTwo {
+  cursor: pointer;
+
+  background-color: var(--green_2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 41px;
+  height: 100%;
+
+  border: solid 1px var(--green_2);
+
+  font-weight: bold;
+  font-size: var(--text);
+  font-family: "Inter", sans-serif;
+}
+
+.campOne:hover,
+.campTwo:hover {
+  border: solid 1px var(--blue_1);
+}
+
+.campTree {
+  background-color: var(--x_1);
+  border: solid 1px var(--x_1);
+}
+
+.campFour {
+  background-color: var(--x_2);
+  border: solid 1px var(--x_2);
+}
+
+.bombRender {
+  display: none;
+
+  width: 40px;
+  height: 40px;
+}
+
+.number > p {
+  display: none;
+}
+
+.one {
+  color: var(--blue_3);
+}
+
+.two {
+  color: var(--green_2);
+}
+
+.tree {
+  color: var(--red_1);
+}
+
+.four {
+  color: var(--red_2);
+}
+
+.five {
+  color: var(--purple_4);
+}
+
+.six {
+  color: var(--purple_2);
+}
+
+.seven {
+  color: var(--backGround-normal_2);
+}
+
+.eight {
+  color: var(--pink);
+}
+
+.one {
+  display: none;
+}
+
+.two {
+  display: none;
+}
+
+.tree {
+  display: none;
+}
+
+.four {
+  display: none;
+}
+
+.five {
+  display: none;
+}
+
+.six {
+  display: none;
+}
+
+.seven {
+  display: none;
+}
+
+.eight {
+  display: none;
+}
+
+.flag {
+  width: 38px;
+  height: 38px;
+}
+
+.flag--normal {
+  width: 27px;
+  height: 38px;
+}
+
+.flag--hard {
+  width: 40px;
+}
+
+.defend, .victory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.068);
+}
+
+.title__defend {
+  color: var(--red_1);
+
+  font-size: var(--title_1);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 550;
+
+  text-shadow: 2px 2px 0 #000000, -2px -2px 0 #000000,
+  -2px 2px 0 #000000, 2px -2px 0 #000000;
+}
+
+.title__victory {
+  color: rgb(255, 255, 0);
+
+  font-size: var(--title_1);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 550;
+
+  text-shadow: 2px 2px 0 #000000, -2px -2px 0 #000000,
+  -2px 2px 0 #000000, 2px -2px 0 #000000;;
+}

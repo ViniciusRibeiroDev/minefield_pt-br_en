@@ -1,0 +1,106 @@
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5%;
+}
+
+.text {
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.text__easy {
+  color: var(--green_1);
+
+  text-shadow: 1px 1px 4px #18758a, -1px -1px 4px #18758a, -1px 1px 4px #18758a,
+    1px -1px 4px #18758a;
+}
+
+.text__normal {
+  color: var(--red_1);
+
+  text-shadow: 1px 1px 4px #18758a, -1px -1px 4px #18758a, -1px 1px 4px #18758a,
+    1px -1px 4px #18758a;
+}
+
+.text__hard {
+  color: var(--purple_2);
+
+  text-shadow: 1px 1px 4px #18758a, -1px -1px 4px #18758a, -1px 1px 4px #18758a,
+    1px -1px 4px #18758a;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+}
+
+.options__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 37px;
+
+  margin-top: 10px;
+}
+
+.button {
+  width: 500px;
+  padding: 15px;
+
+  font-size: var(--text);
+
+  border: none;
+  border-radius: 10px;
+
+  color: var(--white_1);
+
+  cursor: pointer;
+}
+
+.play,
+.statistics {
+  background-color: var(--green_1);
+
+  box-shadow: 10px 10px 10px var(--green_shadow);
+}
+
+.play:hover,
+.statistics:hover {
+  background-color: var(--green_3);
+}
+
+.play:focus,
+.statistics:focus {
+  color: var(--green_1);
+  background-color: var(--white_2);
+}
+
+.difficulty,
+.help {
+  background-color: var(--green_2);
+
+  box-shadow: 10px 10px 10px var(--green_shadow);
+}
+
+.difficulty:hover,
+.help:hover {
+  background-color: var(--green_3);
+}
+
+.difficulty:focus,
+.help:focus {
+  color: var(--green_2);
+  background-color: var(--white_2);
+}
+
+a {
+  text-decoration: none;
+ }

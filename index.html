@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/img/bomb-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/style/reset.css" /> <!-- src/style/reset.css -->
+    <link rel="stylesheet" href="./src/style/globalStyle.css" /> <!-- src/style/globalStyle.css -->
+    <link rel="stylesheet" href="./src/style/homeStyle/home.css" /> <!-- src/style/homeStyle/home.css -->
+    <link rel="stylesheet" href="./src/style/homeStyle/colorDifficultyHome.css" /> <!-- src/style/homeStyle/colorDifficultyHome.css -->
+    <title>Campo Minado</title>
+  </head>
+  <body class="background">
+    <header class="header__container">
+      <h1 class="title">CAMPO MINADO</h1>
+    </header>
+    <main class="main__container">
+      <section class="options__menu">
+        <a href="./src/pages/game.html"
+          ><button class="button play">Jogar</button></a
+        >
+        <button class="button difficulty">Dificuldade</button>
+        <button class="button statistics">Estátisticas</button>
+        <button class="button help">Ajuda</button>
+        <button class="button home__easy">Fácil</button>
+        <button class="button home__normal">Normal</button>
+        <button class="button home__hard">Díficil</button>
+      </section>
+    </main>
+    <script src="./src/script/homeScript/home.js"></script> <!-- src/script/homeScript/home.js -->
+    <script src="./src/script/homeScript/difficulty/easy.js"></script> <!-- src/script/homeScript/difficulty/easy.js -->
+    <script src="./src/script/homescript/difficulty/normal.js"></script><!-- src/script/homescript/difficulty/normal.js -->
+    <script src="./src/script/homescript/difficulty/hard.js"></script> <!-- src/script/homescript/difficulty/hard.js -->
+    <script src="./src/script/homeScript/rederLocalStorageDifficult.js"></script> <!-- src/script/homeScript/rederLocalStorageDifficult.js -->
+  </body>
+</html>
