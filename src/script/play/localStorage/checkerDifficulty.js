@@ -1,3 +1,6 @@
+/* Função responsável por verificar a dificuldade escolhida e renderiza o mapa apartir dela.
+Se a dificuldade não for definida = fácil(Easy). */
+
 let contFlag = 0;
 
 function renderLocalStorageDifficulty() {

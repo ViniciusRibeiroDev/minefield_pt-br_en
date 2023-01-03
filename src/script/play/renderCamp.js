@@ -1,3 +1,5 @@
+/* Função responsavel pela criação e renderização inicial do mapa. */
+
 const mainPlay = document.querySelector(".main__container");
 
 function renderMap(mapParams) {

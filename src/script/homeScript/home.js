@@ -1,3 +1,5 @@
+/* Aplica os eventos de click nos botões da home. */
+
 import { clickEasy } from "./difficulty/easy.js";
 import { clickNormal } from "./difficulty/normal.js";
 import { clickHard } from "./difficulty/hard.js";

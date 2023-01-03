@@ -1,3 +1,5 @@
+/* Função responsável por criar a expansão quando um espaço vazio é criado. */
+
 const mainContainer = document.querySelector(".main__container");
 
 function renderExpand(y, x) {

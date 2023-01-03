@@ -1,3 +1,5 @@
+/* Renderiza os esltilos quando o modo de jogo está no médio (Normal) e manda para o localStorage. */
+
 const backGroundDifficulty = document.querySelector(".background");
 const title = document.querySelector(".title");
 const buttonPlay = document.querySelector(".play");

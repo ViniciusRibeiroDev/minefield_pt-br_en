@@ -1,3 +1,6 @@
+/* Funções responsavel por criar os 2 mapas de para visualização devTools, aonde por eles 
+serão rendezido o mapa na tela. */
+
 let mapPlay = [];
 
 let mapBomb = [];

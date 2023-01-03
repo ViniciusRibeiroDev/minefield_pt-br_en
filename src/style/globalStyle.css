@@ -53,12 +53,13 @@ font-family: 'Raleway', sans-serif;
 
 .background,
 .color__easy {
-  width: 97.5vw;
-  height: 97.6vh;
+  width: 98.9vw;
+  height: 100vh;
 
   font-family: 'Raleway', sans-serif;
 
   background-image: linear-gradient(var(--blue_2), var(--blue_1));
+
 }
 
 .color__normal {

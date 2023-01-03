@@ -1,3 +1,6 @@
+/* funções responsaveis por fazer uma renderização geral dos elementos do  mapa (exceção da bandeira): 
+Click, números e bombas */
+
 let contClick = 0;
 
 function clickGame() {
@@ -70,10 +73,14 @@ function renderBomb() {
       bomb.classList.value.includes("campFour")
     ) {
       const body = document.querySelector("body");
+      const imgEmoji = document.querySelector("img.icons")
       const divDefend = document.createElement("div");
       const h1Defend = document.createElement("h1");
 
+      console.log(imgEmoji)
+
       h1Defend.innerText = "Você Perdeu!";
+      imgEmoji.src = "../img/emoji_triste.png"
 
       h1Defend.classList.add("title__defend");
       divDefend.classList.add("defend");
@@ -82,6 +89,8 @@ function renderBomb() {
 
       divDefend.appendChild(h1Defend);
       body.appendChild(divDefend);
+
+      clearInterval(timer)
     }
   });
 }
