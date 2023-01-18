@@ -19,7 +19,7 @@ function renderLocalStorageDifficulty() {
     campTwo.forEach((two) => two.classList.add("campTwo--easy"));
     iconFlag.src = "../img/red-flag-removebg-preview.png";
 
-    contFlag = 1;
+    contFlag = 33;
   } else if (difficultChecker === "Normal") {
     body.classList.add("color__normal");
     header.classList.add("header--normal");
