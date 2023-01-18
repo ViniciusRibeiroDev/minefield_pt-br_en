@@ -13,10 +13,6 @@ const buttonEasy = document.querySelector(".home__easy");
 const buttonNormal = document.querySelector(".home__normal");
 const buttonHard = document.querySelector(".home__hard");
 
-let play = () => {
-  buttonPlay.addEventListener("click", () => {});
-};
-
 let difficulty = () => {
   buttonDifficulty.addEventListener("click", () => {
     buttonEasy.style.display = "block";
@@ -40,10 +36,17 @@ let difficulty = () => {
   });
 };
 
-let statistics = () => {};
+let statistics = () => {
+  buttonStatistics.addEventListener("click", () =>
+    alert("Função não adicionada!")
+  );
+};
 
-let help = () => {};
+let help = () => {
+  buttonHelp.addEventListener("click", () => alert("Função não adicionada!"));
+};
 
-play();
 difficulty();
+statistics();
+help();
 localStorageFunction(buttonEasy, buttonNormal, buttonHard);

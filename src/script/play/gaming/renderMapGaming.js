@@ -74,21 +74,37 @@ function renderBomb() {
     ) {
       const body = document.querySelector("body");
       const imgEmoji = document.querySelector("img.icons")
-      const divDefend = document.createElement("div");
-      const h1Defend = document.createElement("h1");
 
-      console.log(imgEmoji)
+      document.body.insertAdjacentHTML(
+        "beforeend",
+        `
+        <div class="defeat">
+          <div class="defeat__modal">
+            <h1 class="title__defeat">Você Perdeu!</h1>
+            <div class="buttons__defeat">
+              <button class="button__close close__home">Sair</button>
+              <button class="button__close play__again">Jogar Novamente</button>
+            </div>
+          </div>
+        </div>
+        `
+      )
 
-      h1Defend.innerText = "Você Perdeu!";
-      imgEmoji.src = "../img/emoji_triste.png"
+      const close = document.querySelector(".close__home");
+      const playAgain = document.querySelector(".play__again");
 
-      h1Defend.classList.add("title__defend");
-      divDefend.classList.add("defend");
+      close.addEventListener("click", () => {
+        window.location.replace("/")
+      })
+
+      playAgain.addEventListener("click", () => {
+        window.location.replace("/src/pages/game.html")
+      })
+
+      imgEmoji.src = "../img/emoji_triste.png";
 
       imgBombSelect[index].style.display = "flex";
 
-      divDefend.appendChild(h1Defend);
-      body.appendChild(divDefend);
 
       clearInterval(timer)
     }

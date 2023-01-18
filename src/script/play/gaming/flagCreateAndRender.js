@@ -50,17 +50,35 @@ function flegCreateAndRenderAndRemove() {
           }
           if (bomb === 0) {
             const body = document.querySelector("body");
-            const divVictory = document.createElement("div");
-            const h2Victory = document.createElement("h2");
 
-            h2Victory.innerText = "Você Venceu!";
+            body.insertAdjacentHTML(
+              "beforeend",
+              `
+              <div class="victory">
+                <div class="victory__modal">
+                  <h2 class="title__victory">Você Venceu!</h2>
+                  <div>
+                  <div class="buttons__victory">
+                    <button class="button__close close__home">Sair</button>
+                    <button class="button__close play__again">Jogar Novamente</button>
+                  </div>
+                </div>
+              </div>
+              `
+            )
 
-            h2Victory.classList.add("title__victory");
-            divVictory.classList.add("victory");
+              const close = document.querySelector(".close__home");
+              const playAgain = document.querySelector(".play__again");
 
-            divVictory.appendChild(h2Victory);
-            body.appendChild(divVictory);
-            clearInterval(timer)
+              close.addEventListener("click", () => {
+                window.location.replace("/")
+              })
+
+              playAgain.addEventListener("click", () => {
+                window.location.replace("/src/pages/game.html");
+              })
+
+            clearInterval(timer);
           }
         }
       }

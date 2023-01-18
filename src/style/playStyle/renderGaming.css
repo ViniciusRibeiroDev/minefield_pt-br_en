@@ -140,29 +140,18 @@
   width: 40px;
 }
 
-.defend,
+.defeat,
 .victory {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 100vw;
+  width: 99.7vw;
   height: 100vh;
 
   position: absolute;
 
-  background-color: rgba(0, 0, 0, 0.068);
-}
-
-.title__defend {
-  color: var(--red_1);
-
-  font-size: var(--title_1);
-  font-family: "Raleway", sans-serif;
-  font-weight: 550;
-
-  text-shadow: 2px 2px 0 #000000, -2px -2px 0 #000000, -2px 2px 0 #000000,
-    2px -2px 0 #000000;
+  background-color: rgba(0, 0, 0, 0.199);
 }
 
 .title__victory {
@@ -222,18 +211,14 @@
 .button__close {
   padding: 2%;
 
-  width: 100px;
+  width: 180px;
 
   border-radius: 5%;
   border: none;
 
+  box-shadow: 5px 5px 20px black;
+
   cursor: pointer;
-}
-
-.button__close > a {
-  padding: 12.5% 30%;
-
-  text-decoration: none;
 }
 
 .close__game {
@@ -247,3 +232,77 @@
 .close__game > a, .close__game--not {
   color: var(--white_1);
 }
+
+.defeat__modal, .victory__modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: linear-gradient(rgb(107, 60, 60), rgb(250, 199, 199));
+  border-radius: 2px;
+  
+  width: 600px;
+  height: 250px;
+}
+
+.title__defeat {
+  color: var(--red_1);
+
+  font-size: var(--title_1);
+  font-family: "Raleway", sans-serif;
+  font-weight: 550;
+
+  text-shadow: 2px 2px 0 #000000, -2px -2px 0 #000000, -2px 2px 0 #000000,
+    2px -2px 0 #000000;
+}
+
+
+.buttons__defeat, .buttons__victory {
+  display: flex;
+  justify-content: space-between; 
+
+  width: 500px
+}
+
+.close__home {
+  background-color: var(--red_1);
+  color: var(--white_1);
+
+  font-size: 1.125rem
+}
+
+.close__home:hover {
+  background-color: var(--red_2);
+}
+
+.close__home:focus {
+  background-color: var(--white_1);
+  color: var(--red_1);
+}
+
+.play__again {
+  background-color: var(--green_1);
+  color: var(--white_1);
+
+  font-size: 1.125rem;
+}
+
+.play__again:hover {
+  background-color: var(--green_2);
+}
+
+.play__again:focus {
+  background-color: var(--white_1);
+  color: var(--green_1);
+}
+
+.victory__modal {
+  background-image: linear-gradient(rgb(39, 148, 39), rgb(138, 236, 46)) ;
+}
+
+/* git checkout -b develop */
+/* git push origin "nome da branch" */
+/* git push -u "nome da branch" */
+/* git checkout develop */
+/* git pull origin develop */
+/* gitr merge develop */

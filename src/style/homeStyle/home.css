@@ -85,6 +85,10 @@
   background-color: var(--white_2);
 }
 
+ .play__a {
+  text-decoration: none;
+ } 
+
 .difficulty,
 .help {
   background-color: var(--green_2);
@@ -102,7 +106,3 @@
   color: var(--green_2);
   background-color: var(--white_2);
 }
-
-a {
-  text-decoration: none;
- }
