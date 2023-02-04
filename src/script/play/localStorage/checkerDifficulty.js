@@ -13,6 +13,8 @@ function renderLocalStorageDifficulty() {
 
   if (difficultChecker === null) {
     localStorage.setItem("Difficulty", "Easy");
+
+    contFlag = 33;
   }
 
   console.log(difficultChecker);
