@@ -9,7 +9,13 @@ function renderLocalStorageDifficulty() {
   const header = document.querySelector(".header__container");
   const campOne = document.querySelectorAll(".campOne");
   const campTwo = document.querySelectorAll(".campTwo");
-  const iconFlag = document.querySelector(".icon__flag")
+  const iconFlag = document.querySelector(".icon__flag");
+
+  if (difficultChecker === null) {
+    localStorage.setItem("Difficulty", "Easy");
+  }
+
+  console.log(difficultChecker);
 
   if (difficultChecker === "Easy") {
     body.classList.add("color__easy");
@@ -27,7 +33,7 @@ function renderLocalStorageDifficulty() {
     campOne.forEach((one) => one.classList.add("campOne--normal"));
     campTwo.forEach((two) => two.classList.add("campTwo--normal"));
     iconFlag.src = "../img/orange_flag.png";
-    iconFlag.classList.add("flag--normal")
+    iconFlag.classList.add("flag--normal");
 
     contFlag = 40;
   } else if (difficultChecker === "Hard") {

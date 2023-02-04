@@ -184,7 +184,7 @@
   align-items: center;
   justify-content: space-around;
 
-  background-image: linear-gradient(var(--blue_2), var(--blue_3));;
+  background-image: linear-gradient(var(--blue_2), var(--blue_3));
   border-radius: 5px;
 
   width: 600px;
@@ -225,22 +225,28 @@
   background-color: var(--red_1);
 }
 
+.close__game > a {
+  text-decoration: none;
+}
+
 .close__game--not {
   background-color: var(--green_2);
 }
 
-.close__game > a, .close__game--not {
+.close__game > a,
+.close__game--not {
   color: var(--white_1);
 }
 
-.defeat__modal, .victory__modal {
+.defeat__modal,
+.victory__modal {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   background-image: linear-gradient(rgb(107, 60, 60), rgb(250, 199, 199));
   border-radius: 2px;
-  
+
   width: 600px;
   height: 250px;
 }
@@ -256,19 +262,19 @@
     2px -2px 0 #000000;
 }
 
-
-.buttons__defeat, .buttons__victory {
+.buttons__defeat,
+.buttons__victory {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 
-  width: 500px
+  width: 500px;
 }
 
 .close__home {
   background-color: var(--red_1);
   color: var(--white_1);
 
-  font-size: 1.125rem
+  font-size: 1.125rem;
 }
 
 .close__home:hover {
@@ -297,12 +303,5 @@
 }
 
 .victory__modal {
-  background-image: linear-gradient(rgb(39, 148, 39), rgb(138, 236, 46)) ;
+  background-image: linear-gradient(rgb(39, 148, 39), rgb(138, 236, 46));
 }
-
-/* git checkout -b develop */
-/* git push origin "nome da branch" */
-/* git push -u "nome da branch" */
-/* git checkout develop */
-/* git pull origin develop */
-/* gitr merge develop */

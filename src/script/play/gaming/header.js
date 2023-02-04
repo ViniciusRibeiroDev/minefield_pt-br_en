@@ -15,15 +15,13 @@ function flagCont() {
   flag.innerText = contFlag;
 }
 
-// function timer() {
-let timer =  setInterval(() => {
-    const timer = document.querySelector(".timer");
+let timer = setInterval(() => {
+  const timer = document.querySelector(".timer");
 
-    timer.innerText = cont;
+  timer.innerText = cont;
 
-    cont++;
-  }, 1000);
-// }
+  cont++;
+}, 1000);
 
 function closeGame() {
   const body = document.querySelector(".background");
@@ -60,11 +58,11 @@ function closeGame() {
   });
   buttonNotClose.addEventListener("click", () => {
     divContainerModal.remove();
-     timer = setInterval(() => {
+    timer = setInterval(() => {
       const timer = document.querySelector(".timer");
-  
+
       timer.innerText = cont;
-  
+
       cont++;
     }, 1000);
   });
