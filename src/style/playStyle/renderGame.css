@@ -59,6 +59,8 @@
 .close {
   margin-right: 30px;
 
+  padding: 10px 15px;
+
   cursor: pointer;
 }
 
